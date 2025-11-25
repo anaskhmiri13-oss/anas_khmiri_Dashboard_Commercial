@@ -1,10 +1,10 @@
-const menuItems = document.querySelectorAll("nav ul li");
+const menu = document.querySelectorAll("nav ul li");
 const sections = document.querySelectorAll("main section");
-const tableBody = document.getElementById("Table");
+const table = document.getElementById("Table");
 
-menuItems.forEach(item => {
+menu.forEach(item => {
   item.addEventListener("click", () => {
-    menuItems.forEach(i => i.classList.remove("active"));
+    menu.forEach(i => i.classList.remove("active"));
     item.classList.add("active");
 
     const target = item.getAttribute("data-section");
@@ -24,5 +24,5 @@ produit.forEach(p => {
     <td>${p.categorie}</td>
     <td>${p.prix} €</td>
   `;
-  tableBody.appendChild(row);
+  table.appendChild(row);
 });

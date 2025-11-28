@@ -9,6 +9,7 @@
 <body>
   <header>
     <h1>Dashboard Commercial</h1>
+    <span class="signature-header">© 2025 – Développé par Anas Khmiri</span>
   </header>
   <div class="container">
     <nav class="sidebar">
@@ -25,27 +26,37 @@
         <p>Bienvenue sur le tableau de bord. Consultez vos ventes, produits et revenus.</p>
       </section>
 
-      <section id="ventes" class="section">
-        <h2>Statistiques de ventes</h2>
-        <canvas id="salesChart" width="400" height="250"></canvas>
-      </section>
+    <section id="ventes" class="section">
+       <h2>Statistiques de ventes</h2>
+       <div class="chart-container">
+           <canvas id="salesChart"></canvas>
+      </div>
+   </section>
 
-      <section id="produits" class="section">
-        <h2>Liste des produits</h2>
-        <table>
-          <thead>
-            <tr><th>Produit</th><th>Catégorie</th><th>Prix</th></tr>
-          </thead>
-          <tbody id="Table">
+<section id="produits" class="section">
+  <h2>Liste des produits</h2>
+  <table>
+    <thead>
+      <tr><th>Produit</th><th>Catégorie</th><th>Prix</th></tr>
+    </thead>
+    <tbody id="Table">
 
-          </tbody>
-        </table>
-      </section>
+    </tbody>
+  </table>
 
-      <section id="revenus" class="section">
-        <h2>Répartition des revenus</h2>
-        <canvas id="Chart" width="400" height="250"></canvas>
-      </section>
+  <h3 style="margin-top: 1.5rem;">Répartition des prix par produit</h3>
+  <div class="chart-container">
+    <canvas id="productPriceChart"></canvas>
+  </div>
+</section>
+
+
+    <section id="revenus" class="section">
+      <h2>Répartition des revenus</h2>
+      <div class="chart-container">
+        <canvas id="Chart"></canvas>
+      </div>
+    </section>
     </main>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

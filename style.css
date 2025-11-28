@@ -75,6 +75,13 @@ h2 {
     color: #555;
     max-width: 600px;
 }
+h2:hover {
+  color: #4a90e2;
+  transition: 0.3s;
+}
+button:active {
+  transform: scale(0.96);
+}
 canvas {
     background: white;
     border-radius: 8px;
@@ -109,6 +116,15 @@ tbody tr:hover {
 tbody tr:nth-child(even) {
     background-color: #f8f9fa;
 }
+.chart-container {
+    max-width: 500px;  
+    height: 280px;      
+    margin: 0 auto;     
+}
+.chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -141,9 +157,6 @@ tbody tr:nth-child(even) {
         padding: 0.7rem;
     }
 }
-.section {
-    animation: fadeIn 0.5s ease;
-}
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -154,4 +167,33 @@ tbody tr {
 #accueil p {
     text-align: justify;
     line-height: 1.8;
+}
+canvas,
+table {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+canvas:hover,
+table:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+.section {
+    opacity: 0;
+    transform: translateY(8px);
+    animation: fadeInSimple 0.4s ease forwards;
+}
+@keyframes fadeInSimple {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.signature-header {
+  font-size: 0.8rem;
+  opacity: 1.8;
+  margin-left: 10px;
 }

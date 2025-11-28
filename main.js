@@ -1,14 +1,11 @@
 const menu = document.querySelectorAll("nav ul li");
 const sections = document.querySelectorAll("main section");
 const table = document.getElementById("Table");
-
 menu.forEach(item => {
   item.addEventListener("click", () => {
     menu.forEach(i => i.classList.remove("active"));
     item.classList.add("active");
-
     const target = item.getAttribute("data-section");
-
     sections.forEach(sec => {
       sec.classList.remove("active");
       if (sec.id === target) {

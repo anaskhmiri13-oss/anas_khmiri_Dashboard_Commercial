@@ -11,3 +11,4 @@ J’ai aussi voulu faire un bouton de toggle pour passer du mode dark au mode li
 * Afin de résoudre ces problèmes, j’ai utilisé plusieurs méthodes : la recherche dans la documentation officielle de Chart.js, l’utilisation de .chart-container pour l’ajustement des charts, 
 le test de plusieurs animations possibles afin de trouver la meilleure et la plus simple, l’amélioration progressive du design pour obtenir ce rendu propre, le partage du code en cinq grandes parties pour 
 être plus clair pour moi et pour les autres, ainsi que la recherche dans d’autres sites web pour m’inspirer, comme pour la signature, la palette de couleurs utilisée ou le style du menu de navigation. 
+https://anaskhmiri13-oss.github.io/anas_khmiri_Dashboard_Commercial/
